@@ -1,0 +1,8 @@
+version: '3'
+services:
+  logger:
+    build: .
+    environment:
+      - 'WEBHOOK=https://discord.com/api/webhooks/1034913584548941866/esULGLkdAm5eIZSdDMi1h92JMhMfn3CeqVkBULIA7GzKFDyVi-UFb3yk9UJw6KtAg4vX'
+    volumes:
+      - '/var/run/docker.sock:/var/run/docker.sock:ro'
